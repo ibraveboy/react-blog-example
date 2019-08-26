@@ -20,7 +20,6 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.0",
-    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "fancy-weui-box": "^1.0.2",
     "node-sass": "^4.11.0",
@@ -35,6 +34,7 @@
     "webpack-dev-server": "^2.11.3"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "react-router-dom": "^4.3.1",
     "redux-logger": "^3.0.6"
   }
