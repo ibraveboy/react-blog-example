@@ -1,0 +1,87 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);/*
+    Variables 
+*/
+/*
+    Mixins 
+*/
+/*
+    Extends
+*/
+/*
+   Components
+*/
+.app {
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .app .searchBar {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px; }
+    .app .searchBar .searchBox {
+      height: 40px;
+      width: 320px;
+      font-size: 20px;
+      outline: none; }
+    .app .searchBar .searchBtn {
+      height: 40px;
+      width: 100px;
+      font-size: 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border: 1px solid red; }
+  .app .listView {
+    width: 18%;
+    min-width: 280px; }
+    .app .listView .thumbnail {
+      cursor: pointer; }
+      .app .listView .thumbnail img {
+        width: 100%; }
+    .app .listView .details .videoTitle {
+      cursor: pointer; }
+    .app .listView .details .subDetails {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 15px 0px 0px; }
+      .app .listView .details .subDetails .channelTitle {
+        color: red; }
+      .app .listView .details .subDetails .publishDate {
+        min-width: 100px; }
+  .app .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .app .overlay .backgroundFade {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: black;
+      opacity: 0.7;
+      z-index: -1; }
+    .app .overlay .closeOverlay {
+      position: absolute;
+      right: 60px;
+      top: 30px;
+      font-size: 50px;
+      cursor: pointer;
+      color: white; }
+  .app .overlay.hide {
+    display: none; }
+  .app .overlay.show {
+    display: flex; }
+
+/*# sourceMappingURL=styles.css.map*/

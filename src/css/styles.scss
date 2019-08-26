@@ -1,0 +1,137 @@
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+/*
+    Variables 
+*/
+@import './variables/allvariables';
+/*
+    Mixins 
+*/
+@import './mixins/Headings';
+@import './mixins/Buttons';
+@import './mixins/circle';
+@import './mixins/Hero';
+
+/*
+    Extends
+*/
+@import './extends/allextends';
+/*
+   Components
+*/
+// @import './components/Navbar';
+// @import './components/Hero';
+// @import './components/Services';
+// @import './components/Testimonials';
+// @import './components/AboutHero';
+// @import './components/AboutStory';
+// @import './components/Footer';
+// @import './components/Posts';
+// @import './components/Post';
+// @import './components/Sidebar';
+
+// body{
+//     margin: 0;
+//     padding: 0;
+//     font-family: $fonts;
+// }
+
+// .section{
+//     height: 85vh;
+//     padding-top: 50px;
+// }
+// a{
+//     text-decoration: none;
+// }
+
+.app{
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .searchBar{
+        width: 100%;
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+        .searchBox{
+            height: 40px;
+            width: 320px;
+            font-size: 20px;
+            outline: none;
+        }
+        .searchBtn{
+            height: 40px;
+            width:100px;
+            font-size: 20px;    
+            background-color: red;
+            color:white;
+            border:none;
+            cursor: pointer;
+            border:1px solid red;
+        }
+    }
+    .listView{
+        width:18%;
+        min-width: 280px;
+        .thumbnail{
+            cursor: pointer;
+            img{
+                width:100%;
+            }
+        }
+        .details{
+            .videoTitle{
+                cursor: pointer;
+            }
+            .subDetails{
+                display: flex;
+                justify-content: space-between;
+                padding:0px 15px 0px 0px;
+                .channelTitle{
+                    color:red;
+                }
+                .publishDate{
+                    min-width: 100px;
+                }
+            }
+        }
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .backgroundFade{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom:0;
+            background-color: black;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        .closeOverlay{
+            position: absolute;
+            right:60px;
+            top:30px;
+            font-size: 50px;
+            cursor: pointer;
+            color:white;
+        }
+    }
+    .overlay.hide{
+        display: none;
+    }
+    .overlay.show{
+        display: flex;
+    }
+}
