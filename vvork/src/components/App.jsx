@@ -40,7 +40,7 @@ class App extends Component{
         if(this.state.query=="")
             return false
 
-        Axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=21&key=AIzaSyD1_N8o8IUNpzfSBA0v15PNf7Lraqpb2ok&q="+this.state.query)
+        Axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=21&key=AIzaSyB5woohTgRFgceCvQsi7kQkGIuf043tfRY&q="+this.state.query)
         .then( res => {
             this.setState({
                 data:res.data,
@@ -62,7 +62,7 @@ class App extends Component{
         
     }
     componentDidMount(){
-        Axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=21&key=AIzaSyD1_N8o8IUNpzfSBA0v15PNf7Lraqpb2ok")
+        Axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=21&key=AIzaSyB5woohTgRFgceCvQsi7kQkGIuf043tfRY")
         .then( res => {
             this.setState({
                 data:res.data
