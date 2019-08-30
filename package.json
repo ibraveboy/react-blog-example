@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server  --config webpack.dev.config.js --open",
     "prod": "webpack --config webpack.prod.config.js",
-    "start":"node server/index.js"
+    "start": "node server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +22,6 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
-    "fancy-weui-box": "^1.0.2",
-    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^7.1.0",
